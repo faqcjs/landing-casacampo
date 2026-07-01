@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casa Campo — Eventos Infantiles · Médano de Oro, San Juan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#F5F0E5',
+          bgalt: '#ECE4D1',
+          ink: '#2B3328',
+          inksoft: '#5C6653',
+          green: '#5F7350',
+          greendeep: '#37452F',
+          greenpale: '#DEE5D2',
+          wood: '#A68A63',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          sans: ['Work Sans', 'sans-serif'],
+        },
+        keyframes: {
+          fadeUpIn: {
+            '0%': { opacity: 0, transform: 'translateY(22px)' },
+            '100%': { opacity: 1, transform: 'translateY(0)' },
+          },
+        },
+        animation: {
+          fadeUpIn: 'fadeUpIn .9s ease forwards',
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  em { font-style: italic; font-weight: 400; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal, .load-in { opacity: 1 !important; transform: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body class="bg-bg text-ink font-sans leading-relaxed antialiased overflow-x-hidden">
+
+<header class="load-in animate-fadeUpIn sticky top-0 z-50 bg-bg/90 backdrop-blur-md border-b border-ink/10">
+  <nav class="max-w-[1140px] mx-auto px-6 flex items-center justify-between py-[18px]">
+    <div class="font-display font-semibold text-[23px] tracking-tight">Casa Campo</div>
+    <div class="hidden md:flex gap-9 text-[14.5px] font-medium text-inksoft">
+      <a href="#espacio" class="hover:text-ink transition-colors">El espacio</a>
+      <a href="#galeria" class="hover:text-ink transition-colors">Galería</a>
+      <a href="#contacto" class="hover:text-ink transition-colors">Ubicación</a>
+    </div>
+    <a href="#contacto" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[14.5px] font-medium bg-greendeep text-bg hover:bg-green hover:-translate-y-0.5 transition-all">Consultar</a>
+  </nav>
+</header>
+
+<section class="relative h-[92vh] min-h-[560px] flex items-end overflow-hidden">
+  <img id="heroImg" src="img/primera-foto.jfif" alt="Casa Campo — casa con pileta y jardín parquizado en Médano de Oro"
+       class="absolute inset-0 w-full h-full object-cover scale-[1.06] will-change-transform">
+  <div class="absolute inset-0 bg-gradient-to-b from-greendeep/5 via-greendeep/15 to-greendeep/75"></div>
+
+  <div class="relative z-10 max-w-[1140px] mx-auto px-6 pb-[72px] text-bg">
+    <span class="load-in animate-fadeUpIn [animation-delay:150ms] inline-flex items-center gap-3 text-[13px] font-medium tracking-[0.09em] uppercase opacity-90 mb-5
+                 before:content-[''] before:w-[26px] before:h-px before:bg-bg before:opacity-60">
+      Médano de Oro · San Juan
+    </span>
+    <h1 class="load-in animate-fadeUpIn [animation-delay:300ms] font-display font-medium leading-[1.08] tracking-tight text-[48px] sm:text-[64px] lg:text-[92px] mb-4">
+      Casa<br><em class="text-green">Campo</em>
+    </h1>
+    <p class="load-in animate-fadeUpIn [animation-delay:500ms] text-lg max-w-[480px] opacity-90 mb-8">
+      Tu evento infantil en un espacio amplio y cómodo. Parquizado verde, aire libre y total tranquilidad para que los chicos jueguen y se diviertan.
+    </p>
+    <div class="load-in animate-fadeUpIn [animation-delay:650ms] flex gap-3.5 flex-wrap">
+      <!-- EDITAR ACA: reemplazar 5492640000000 por el numero real (código país 54 + 9 + código de área sin 0 + número sin 15) -->
+      <a href="https://wa.me/5492640000000?text=Hola%2C%20quisiera%20consultar%20fechas%20disponibles%20en%20Casa%20Campo" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[14.5px] font-medium bg-greendeep text-bg hover:bg-green hover:-translate-y-0.5 transition-all">
+        Consultar fechas disponibles
+      </a>
+      <a href="#galeria" class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[14.5px] font-medium border border-bg/40 text-bg hover:border-bg transition-all">
+        Ver el espacio
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="py-24" id="espacio">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out max-w-[560px] mb-14">
+      <span class="block text-[13px] font-semibold tracking-[0.09em] uppercase text-green mb-4">El espacio</span>
+      <h2 class="font-display font-medium text-[30px] sm:text-[38px] lg:text-[44px] leading-tight">Todo lo que necesita el festejo, ya está</h2>
+      <p class="text-inksoft mt-4">Un lugar pensado en detalle para que la organización sea simple y el evento, memorable.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-y-9 gap-x-6">
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out flex flex-col gap-4 md:border-l md:border-ink/10 md:first:border-l-0 md:pl-6 md:first:pl-0">
+        <svg class="w-[34px] h-[34px] text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>
+        <h3 class="font-medium text-[17px] tracking-tight">Castillo inflable</h3>
+        <p class="text-sm text-inksoft">Con tobogán, disponible durante todo el evento.</p>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out flex flex-col gap-4 md:border-l md:border-ink/10 md:pl-6">
+        <svg class="w-[34px] h-[34px] text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="10" width="18" height="4"/><path d="M5 14v6M19 14v6"/></svg>
+        <h3 class="font-medium text-[17px] tracking-tight">Mesas y sillas para niños</h3>
+        <p class="text-sm text-inksoft">Mobiliario a su medida, listo para usar.</p>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out flex flex-col gap-4 md:border-l md:border-ink/10 md:pl-6">
+        <svg class="w-[34px] h-[34px] text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+        <h3 class="font-medium text-[17px] tracking-tight">Candy bar</h3>
+        <p class="text-sm text-inksoft">Espacio dispuesto para la mesa dulce del festejo.</p>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out flex flex-col gap-4 md:border-l md:border-ink/10 md:pl-6">
+        <svg class="w-[34px] h-[34px] text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 20c2-8 4-12 9-16 5 4 7 8 9 16"/><path d="M3 20h18"/></svg>
+        <h3 class="font-medium text-[17px] tracking-tight">Amplio espacio verde</h3>
+        <p class="text-sm text-inksoft">Parquizado y arbolado, ideal para correr y jugar.</p>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out flex flex-col gap-4 md:border-l md:border-ink/10 md:pl-6">
+        <svg class="w-[34px] h-[34px] text-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.5-9 9-9 9z"/></svg>
+        <h3 class="font-medium text-[17px] tracking-tight">Ambiente familiar y seguro</h3>
+        <p class="text-sm text-inksoft">Tranquilidad para los chicos y para los grandes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out bg-greendeep text-bg py-16">
+  <div class="max-w-[1140px] mx-auto px-6 flex items-center justify-between gap-8 flex-wrap">
+    <h2 class="font-display font-medium text-[24px] sm:text-[30px] lg:text-[34px] max-w-[520px] text-bg">Perfecto para cumpleaños, bautismos y reuniones infantiles</h2>
+    <div class="flex gap-3 flex-wrap">
+      <span class="border border-bg/35 px-[18px] py-[9px] rounded-full text-sm">Cumpleaños</span>
+      <span class="border border-bg/35 px-[18px] py-[9px] rounded-full text-sm">Bautismos</span>
+      <span class="border border-bg/35 px-[18px] py-[9px] rounded-full text-sm">Reuniones infantiles</span>
+    </div>
+  </div>
+</section>
+
+<section class="py-24" id="galeria">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out max-w-[560px] mb-14">
+      <span class="block text-[13px] font-semibold tracking-[0.09em] uppercase text-green mb-4">Galería</span>
+      <h2 class="font-display font-medium text-[30px] sm:text-[38px] lg:text-[44px] leading-tight">Así se vive un día en Casa Campo</h2>
+      <div class="flex items-end gap-1.5 h-[34px] mt-5">
+        <span class="w-[2px] h-[14px] bg-wood/55"></span>
+        <span class="w-[2px] h-[26px] bg-wood/55"></span>
+        <span class="w-[2px] h-[34px] bg-wood/55"></span>
+        <span class="w-[2px] h-[20px] bg-wood/55"></span>
+        <span class="w-[2px] h-[30px] bg-wood/55"></span>
+        <span class="w-[2px] h-[16px] bg-wood/55"></span>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-6 auto-rows-[220px] md:auto-rows-[180px] gap-4">
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out group relative col-span-2 md:col-span-3 md:row-span-2 rounded-2xl overflow-hidden cursor-zoom-in">
+        <img src="img/foto-exterior3.jfif" alt="Mesa larga con sillas blancas y castillo inflable en el jardín" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <span class="absolute left-3.5 bottom-3 text-white text-[13px] font-medium [text-shadow:0_2px_8px_rgba(0,0,0,0.4)]">Salón al aire libre</span>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out group relative col-span-2 md:col-span-3 rounded-2xl overflow-hidden cursor-zoom-in">
+        <img src="img/pileta.jfif" alt="Pileta con tobogán amarillo y juegos infantiles" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <span class="absolute left-3.5 bottom-3 text-white text-[13px] font-medium [text-shadow:0_2px_8px_rgba(0,0,0,0.4)]">Pileta y tobogán</span>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out group relative col-span-2 md:col-span-3 rounded-2xl overflow-hidden cursor-zoom-in">
+        <img src="img/foto-exterior.jfif" alt="Playground con trepadora, metegol y castillo inflable" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <span class="absolute left-3.5 bottom-3 text-white text-[13px] font-medium [text-shadow:0_2px_8px_rgba(0,0,0,0.4)]">Zona de juegos</span>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out group relative col-span-2 md:col-span-2 rounded-2xl overflow-hidden cursor-zoom-in">
+        <img src="img/interior.jfif" alt="Living exterior bajo pérgola de madera junto a la pileta" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <span class="absolute left-3.5 bottom-3 text-white text-[13px] font-medium [text-shadow:0_2px_8px_rgba(0,0,0,0.4)]">Living exterior</span>
+      </div>
+      <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out group relative col-span-2 md:col-span-4 rounded-2xl overflow-hidden cursor-zoom-in">
+        <img src="img/adentro.jfif" alt="Mesa decorada con arcos blancos entre los árboles" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+        <span class="absolute left-3.5 bottom-3 text-white text-[13px] font-medium [text-shadow:0_2px_8px_rgba(0,0,0,0.4)]">Ambientación para el festejo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-24" id="contacto">
+  <div class="max-w-[1140px] mx-auto px-6">
+    <div class="reveal opacity-0 translate-y-7 transition-all duration-700 ease-out bg-greenpale rounded-[26px] p-8 md:p-16 grid md:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
+      <div>
+        <span class="block text-[13px] font-semibold tracking-[0.09em] uppercase text-greendeep mb-4">Ubicación</span>
+        <h2 class="font-display font-medium text-[28px] sm:text-[34px] lg:text-[38px] mb-4">Consultá fechas disponibles</h2>
+        <p class="text-inksoft mb-7 max-w-[420px]">Enviános un mensaje y te pasamos toda la info: disponibilidad, qué incluye el espacio y cómo coordinar tu evento.</p>
+        <div class="flex items-center gap-2.5 text-[15px] font-medium mb-7 text-greendeep">
+          <svg class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-7.5-7-12a7 7 0 0114 0c0 4.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          Médano de Oro — San Juan
+        </div>
+        <div class="flex gap-3.5 flex-wrap">
+          <!-- EDITAR ACA: reemplazar 5492640000000 por el numero real (código país 54 + 9 + código de área sin 0 + número sin 15) -->
+          <a href="https://wa.me/5492640000000?text=Hola%2C%20quisiera%20consultar%20fechas%20disponibles%20en%20Casa%20Campo" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-full text-[14.5px] font-medium bg-greendeep text-bg hover:bg-green hover:-translate-y-0.5 transition-all">
+            Enviar mensaje por WhatsApp
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-6 border-t md:border-t-0 md:border-l border-ink/20 pt-7 md:pt-0 md:pl-10">
+        <div>
+          <span class="block text-[12.5px] uppercase tracking-[0.08em] text-inksoft mb-1">Zona</span>
+          <span class="text-[16px] font-medium">Médano de Oro, San Juan</span>
+        </div>
+        <div>
+          <span class="block text-[12.5px] uppercase tracking-[0.08em] text-inksoft mb-1">Ideal para</span>
+          <span class="text-[16px] font-medium">Cumpleaños, bautismos y reuniones infantiles</span>
+        </div>
+        <div>
+          <span class="block text-[12.5px] uppercase tracking-[0.08em] text-inksoft mb-1">Incluye</span>
+          <span class="text-[16px] font-medium">Castillo inflable, candy bar, mobiliario infantil y espacio verde</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="py-11 pb-12">
+  <div class="max-w-[1140px] mx-auto px-6 flex justify-between items-center text-sm text-inksoft flex-wrap gap-4">
+    <span>Casa Campo — Eventos infantiles · Médano de Oro, San Juan</span>
+    <div class="flex gap-5">
+      <a href="https://www.facebook.com/casa.campo.322395/" target="_blank" rel="noopener"class="hover:text-ink transition-colors">Facebook</a>
+    </div>
+  </div>
+</footer>
+
+<div id="lightbox" class="fixed inset-0 z-[100] bg-greendeep/90 flex items-center justify-center p-6 md:p-10 opacity-0 invisible transition-opacity duration-300">
+  <button id="lightboxClose" aria-label="Cerrar imagen"
+          class="absolute top-6 right-6 w-11 h-11 rounded-full bg-bg/10 border border-bg/30 text-bg text-xl flex items-center justify-center hover:bg-bg/20 transition-colors">✕</button>
+  <img id="lightboxImg" src="" alt="" class="max-w-[92vw] md:max-w-[1100px] max-h-[88vh] rounded-xl shadow-2xl scale-95 transition-transform duration-300">
+</div>
+
+<script>
+  // scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.remove('opacity-0', 'translate-y-7');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  reveals.forEach(el => io.observe(el));
+
+  // subtle hero parallax
+  const heroImg = document.getElementById('heroImg');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!prefersReduced) {
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      if (y < window.innerHeight) {
+        heroImg.style.transform = `scale(1.06) translateY(${y * 0.12}px)`;
+      }
+    }, { passive: true });
+  }
+
+  // lightbox: fotos ampliables con un click
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+
+  document.querySelectorAll('#galeria img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.remove('opacity-0', 'invisible');
+      lightboxImg.classList.remove('scale-95');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeLightbox() {
+    lightbox.classList.add('opacity-0', 'invisible');
+    lightboxImg.classList.add('scale-95');
+    document.body.style.overflow = '';
+  }
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+</script>
+
+</body>
+</html>
